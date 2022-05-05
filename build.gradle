@@ -1,0 +1,18 @@
+apply plugin: 'java-library'
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation project(":modules:annProc:annotations")
+    compileOnly project(":modules:annProc:processor")
+    annotationProcessor project(":modules:annProc:processor")
+}
+
+test {
+    useJUnitPlatform()
+}
