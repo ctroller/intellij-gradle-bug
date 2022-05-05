@@ -21,5 +21,5 @@ java: SimpleProcessor was called!
 Writing classes… [intellij-bug.main]
 ```
 
-3. Now run `gradle clean` again
+3. Now run `./gradlew clean` again
 4. Rebuild the project in IntelliJ; The Annotation processor is not called anymore.
